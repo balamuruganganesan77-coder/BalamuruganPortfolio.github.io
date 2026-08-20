@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bala Murugan G — Software Engineer | EEE Foundation</title>
+<meta name="description" content="Bala Murugan G — EEE engineering student building backend systems and AI-powered applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background atmosphere -->
+<div class="bg-atmosphere">
+  <div class="grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAV -->
+<header>
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">BM</span>
+      Bala Murugan
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#journey" data-nav>Journey</a>
+      <a href="#certifications" data-nav>Certifications</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        <span class="label-full">Open to Software Opportunities</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" data-nav-mobile>About</a>
+  <a href="#skills" data-nav-mobile>Skills</a>
+  <a href="#projects" data-nav-mobile>Projects</a>
+  <a href="#journey" data-nav-mobile>Journey</a>
+  <a href="#certifications" data-nav-mobile>Certifications</a>
+  <a href="#contact" data-nav-mobile>Contact</a>
+  <div class="status-badge"><span class="status-dot"></span> Open to Software Opportunities</div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-circuit" aria-hidden="true">
+    <svg viewBox="0 0 340 520" fill="none">
+      <path d="M340 60 H240 V140 H300 V220 H220 V320 H280 V400 H180 V480" stroke="url(#g1)" stroke-width="1.5" opacity="0.5"/>
+      <circle cx="240" cy="60" r="4" fill="#4FD8FF"/>
+      <circle cx="220" cy="320" r="4" fill="#9D6BFF"/>
+      <circle cx="180" cy="480" r="4" fill="#5B8CFF"/>
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="0" y2="520" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#4FD8FF"/><stop offset="0.5" stop-color="#5B8CFF"/><stop offset="1" stop-color="#9D6BFF"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="wrap hero-inner">
+    <div class="status-badge"><span class="status-dot"></span> Open to Software Opportunities</div>
+    <h1>Bala Murugan G — <span class="grad">building intelligent software</span> on an electrical engineer's foundation.</h1>
+    <div class="role-line">
+      <span>EEE Student</span><span class="sep">•</span><span>Software Engineer</span><span class="sep">•</span><span>AI / Backend Developer</span>
+    </div>
+    <p class="lead">I design and build backend systems, APIs, and AI-powered applications — grounded in the analytical rigor of an electrical engineering degree.</p>
+    <div class="btn-row">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="/resume.pdf" class="btn btn-ghost" download>Download Resume</a>
+    </div>
+    <div class="social-row">
+      <a class="btn-icon" href="https://github.com/balamurugan" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.14c-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.6.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.07.78 2.16v3.2c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+      </a>
+      <a class="btn-icon" href="https://linkedin.com/in/balamurugan" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      </a>
+      <a class="btn-icon" href="mailto:balamuruganganesan77@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow">Who I Am</div>
+    <div class="section-head">
+      <h2>An engineer's mind, applied to software</h2>
+      <p>Grounded in electrical fundamentals, focused on building things that run.</p>
+    </div>
+    <div class="about-grid reveal">
+      <div class="card glass about-card">
+        <p>I'm an Electrical &amp; Electronics Engineering student at Paavai Engineering College, actively developing skills in <span class="highlight">software engineering, backend development, and AI-powered applications</span>. My day-to-day work spans Python, JavaScript, SQL, and FastAPI — building systems that solve real problems.</p>
+        <p>My EEE background isn't a detour — it's an advantage. Circuit analysis and control systems taught me to think in signals, states, and feedback loops, which translates directly into <span class="highlight">structured problem-solving, systems thinking, and engineering discipline</span> when I write software.</p>
+      </div>
+      <div class="about-side">
+        <div class="card glass mini-stat"><div class="num grad-text">7.30</div><div class="label">CGPA in EEE, Paavai Engineering College</div></div>
+        <div class="card glass mini-stat"><div class="num grad-text">6+</div><div class="label">Certifications across software, AI &amp; databases</div></div>
+        <div class="card glass mini-stat"><div class="num grad-text">2027</div><div class="label">Expected graduation</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow">Skills</div>
+    <div class="section-head">
+      <h2>What I work with</h2>
+      <p>Software-first toolkit, backed by an electronics foundation.</p>
+    </div>
+    <div class="skills-grid reveal-stagger">
+      <div class="card glass skill-card sw">
+        <div class="icon-badge">SW</div>
+        <h4>Software Development</h4>
+        <div class="skill-tags">
+          <span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>SQL</span><span>Git</span><span>GitHub</span>
+        </div>
+      </div>
+      <div class="card glass skill-card be">
+        <div class="icon-badge">BE</div>
+        <h4>Backend</h4>
+        <div class="skill-tags">
+          <span>FastAPI</span><span>Flask</span><span>REST APIs</span><span>Authentication</span><span>Database Integration</span>
+        </div>
+      </div>
+      <div class="card glass skill-card ai">
+        <div class="icon-badge">AI</div>
+        <h4>Data / AI</h4>
+        <div class="skill-tags">
+          <span>Pandas</span><span>AI APIs</span><span>AI-Powered Apps</span><span>Data Analysis</span>
+        </div>
+      </div>
+      <div class="card glass skill-card eee">
+        <div class="icon-badge">EE</div>
+        <h4>EEE / Engineering</h4>
+        <div class="skill-tags">
+          <span>Electrical &amp; Electronics Fundamentals</span><span>IoT</span><span>Digital Systems</span><span>Engineering Problem Solving</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow">Projects</div>
+    <div class="section-head">
+      <h2>Things I've built</h2>
+      <p>Backend-first builds — real APIs, real databases. Click a card for the full breakdown.</p>
+    </div>
+    <div class="projects-grid reveal-stagger">
+
+      <div class="card glass project-card" data-modal="resume-analyzer" tabindex="0" role="button" aria-label="Open AI Resume Analyzer details">
+        <div class="project-media"><span class="glyph">AI</span></div>
+        <div class="project-body">
+          <div class="project-tag">AI / Backend</div>
+          <h3>AI Resume Analyzer</h3>
+          <p>An AI-powered platform that analyzes resumes, surfaces ATS-style insights, identifies skills and suggests improvements.</p>
+          <div class="pin-row">
+            <span class="pin">Python</span><span class="pin">FastAPI</span><span class="pin">AI API</span><span class="pin">JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <span class="btn btn-ghost btn-sm">View Details</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card glass project-card" data-modal="store-system" tabindex="0" role="button" aria-label="Open Low Cost Store Management System details">
+        <div class="project-media"><span class="glyph">DB</span></div>
+        <div class="project-body">
+          <div class="project-tag">Full-Stack</div>
+          <h3>Low Cost Store Management System</h3>
+          <p>A store management web application for handling product listings and inventory, backed by a REST API and SQL database.</p>
+          <div class="pin-row">
+            <span class="pin">Python</span><span class="pin">FastAPI</span><span class="pin">SQL</span><span class="pin">HTML/CSS</span>
+          </div>
+          <div class="project-actions">
+            <span class="btn btn-ghost btn-sm">View Details</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Project modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal glass" role="dialog" aria-modal="true" id="modalContent">
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <!-- populated by JS -->
+  </div>
+</div>
+
+<!-- LEARNING JOURNEY -->
+<section id="journey">
+  <div class="wrap">
+    <div class="eyebrow">Experience</div>
+    <div class="section-head">
+      <h2>Learning journey</h2>
+      <p>From circuits to code — the path so far.</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="t-step">
+        <div class="t-node">01</div>
+        <h4>EEE Engineering Education</h4>
+        <p>Building a foundation in electrical circuits, power systems and control theory at Paavai Engineering College.</p>
+      </div>
+      <div class="t-step">
+        <div class="t-node">02</div>
+        <h4>Programming &amp; Web Development</h4>
+        <p>Learned Python, JavaScript, HTML/CSS and SQL through structured coursework and certifications.</p>
+      </div>
+      <div class="t-step">
+        <div class="t-node">03</div>
+        <h4>Backend Development</h4>
+        <p>Built REST APIs and database-driven applications using FastAPI.</p>
+      </div>
+      <div class="t-step">
+        <div class="t-node">04</div>
+        <h4>AI / Data Projects</h4>
+        <p>Explored AI APIs and applied them to real applications, including an automated resume analysis tool.</p>
+      </div>
+      <div class="t-step">
+        <div class="t-node">05</div>
+        <h4>Software Engineering Career Goal</h4>
+        <p>Working toward a role as a backend / AI-focused software engineer, applying engineering discipline to every system I build.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="wrap">
+    <div class="eyebrow">Certifications</div>
+    <div class="section-head">
+      <h2>Verified learning</h2>
+      <p>Structured certifications across programming, databases and AI.</p>
+    </div>
+    <div class="cert-grid reveal-stagger">
+
+      <div class="card glass cert-card">
+        <div class="cert-icon">Py</div>
+        <h4>Programming Foundations with Python</h4>
+        <div class="cert-platform">NxtWave · CCBP 4.0 Academy</div>
+        <div class="cert-skill">Python fundamentals</div>
+        <a class="cert-link" href="https://certificates.ccbp.in/academy/programming-foundations-with-python?id=IMYOCDKIKD" target="_blank" rel="noopener">Verify credential →</a>
+      </div>
+
+      <div class="card glass cert-card">
+        <div class="cert-icon">DB</div>
+        <h4>Introduction to Databases</h4>
+        <div class="cert-platform">NxtWave · CCBP 4.0 Academy</div>
+        <div class="cert-skill">SQL fundamentals</div>
+        <a class="cert-link" href="https://certificates.ccbp.in/academy/introduction-to-databases?id=WWTVLLDWDB" target="_blank" rel="noopener">Verify credential →</a>
+      </div>
+
+      <div class="card glass cert-card">
+        <div class="cert-icon">OOP</div>
+        <h4>Object Oriented Programming using Python</h4>
+        <div class="cert-platform">Infosys Springboard</div>
+        <div class="cert-skill">OOP concepts &amp; principles</div>
+        <a class="cert-link" href="https://verify.onwingspan.com" target="_blank" rel="noopener">Verify credential →</a>
+      </div>
+
+      <div class="card glass cert-card">
+        <div class="cert-icon">AI</div>
+        <h4>AI Fundamentals</h4>
+        <div class="cert-platform">IBM SkillsBuild</div>
+        <div class="cert-skill">Foundations for understanding AI</div>
+        <span class="cert-skill" style="margin-top:-8px; display:block; font-size:12px;">Completed 01 Mar 2026</span>
+      </div>
+
+      <div class="card glass cert-card">
+        <div class="cert-icon">Web</div>
+        <h4>Build Your Own Responsive Website</h4>
+        <div class="cert-platform">NxtWave · CCBP 4.0 Academy</div>
+        <div class="cert-skill">Bootstrap, Flexbox</div>
+        <a class="cert-link" href="https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=GXBMDGUYEY" target="_blank" rel="noopener">Verify credential →</a>
+      </div>
+
+      <div class="card glass cert-card">
+        <div class="cert-icon">Web</div>
+        <h4>Build Your Own Static Website</h4>
+        <div class="cert-platform">NxtWave · CCBP 4.0 Academy</div>
+        <div class="cert-skill">HTML, CSS, Bootstrap</div>
+        <a class="cert-link" href="https://certificates.ccbp.in/academy/static-website?id=GTNDLSHAXE" target="_blank" rel="noopener">Verify credential →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EEE x SOFTWARE -->
+<section class="split-section">
+  <div class="wrap">
+    <div class="split-wrap card glass">
+      <div class="split-title">
+        <h2>Where hardware meets software</h2>
+        <p>My EEE background gives me an understanding of electrical and electronic systems; my software skills let me turn that understanding into intelligent applications.</p>
+      </div>
+      <div class="split-grid">
+        <div class="split-col eee-col">
+          <div class="split-label">EEE Foundation</div>
+          <div class="chain">
+            <div class="chain-node">Circuit</div>
+            <span class="chain-arrow">↓</span>
+            <div class="chain-node">Signals</div>
+            <span class="chain-arrow">↓</span>
+            <div class="chain-node">Systems</div>
+          </div>
+        </div>
+        <div class="split-connector" aria-hidden="true">
+          <svg viewBox="0 0 60 220" fill="none">
+            <path d="M5 20 C40 60, 20 160, 55 200" stroke="url(#g2)" stroke-width="2" fill="none"/>
+            <circle cx="5" cy="20" r="4" fill="#5B8CFF"/>
+            <circle cx="55" cy="200" r="4" fill="#4FD8FF"/>
+            <defs>
+              <linearGradient id="g2" x1="0" y1="0" x2="60" y2="220" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5B8CFF"/><stop offset="1" stop-color="#4FD8FF"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="split-col sw-col">
+          <div class="split-label">Software Direction</div>
+          <div class="chain">
+            <div class="chain-node">Code</div>
+            <span class="chain-arrow">↓</span>
+            <div class="chain-node">APIs</div>
+            <span class="chain-arrow">↓</span>
+            <div class="chain-node">AI Applications</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <div class="section-head">
+      <h2>Let's build something</h2>
+      <p>Open to software engineering internships and backend/AI opportunities.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <form class="card glass contact-form" id="contactForm">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+        <p class="form-note">This form is frontend-ready — connect it to an email service or backend endpoint to receive messages.</p>
+      </form>
+      <div class="contact-info">
+        <div class="card glass">
+          <h3>Direct contact</h3>
+          <p>Fastest way to reach me — usually reply within a day.</p>
+          <div class="contact-links">
+            <a class="contact-link-row" href="mailto:balamuruganganesan77@gmail.com">
+              <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg></span>
+              balamuruganganesan77@gmail.com
+            </a>
+            <a class="contact-link-row" href="https://github.com/balamurugan" target="_blank" rel="noopener">
+              <span class="btn-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.14c-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.6.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.07.78 2.16v3.2c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></span>
+              github.com/balamurugan
+            </a>
+            <a class="contact-link-row" href="https://linkedin.com/in/balamurugan" target="_blank" rel="noopener">
+              <span class="btn-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></span>
+              linkedin.com/in/balamurugan
+            </a>
+          </div>
+        </div>
+        <div class="card glass mini-stat">
+          <div class="num grad-text" style="font-size:16px;">Tenkasi, Tamil Nadu</div>
+          <div class="label">Based in</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Bala Murugan G</div>
+        <div class="footer-tag">EEE foundation. Software engineering future.</div>
+      </div>
+      <div class="footer-links">
+        <a class="btn-icon" href="https://github.com/balamurugan" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.14c-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.6.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.07.78 2.16v3.2c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg></a>
+        <a class="btn-icon" href="https://linkedin.com/in/balamurugan" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a class="btn-icon" href="mailto:balamuruganganesan77@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Bala Murugan G. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
