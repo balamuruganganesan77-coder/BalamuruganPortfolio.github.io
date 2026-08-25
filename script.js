@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
       stack: ['Python', 'FastAPI', 'AI API', 'HTML', 'CSS', 'JavaScript'],
       contribution: 'Built the backend logic end-to-end with FastAPI and integrated the AI API for feedback generation, alongside the responsive frontend.',
-      github: 'https://github.com/balamurugan',
+      github: 'https://github.com/balamuruganganesan77-coder',
       demo: null
     },
     'store-system': {
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
       stack: ['Python', 'FastAPI', 'SQL', 'HTML', 'CSS'],
       contribution: 'Designed and built the REST API layer with FastAPI, connected the SQL database, and built the responsive frontend pages.',
-      github: 'https://github.com/balamurugan',
+      github: 'https://github.com/balamuruganganesan77-coder',
       demo: null
     }
   };
