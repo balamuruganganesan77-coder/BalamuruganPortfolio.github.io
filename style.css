@@ -454,3 +454,86 @@ footer{ border-top:1px solid var(--border); padding:40px 0; }
   .cert-grid{ grid-template-columns:1fr; }
   .status-badge span.label-full{ display:none; }
 }
+
+/* ============ CERTIFICATE IMAGE LIGHTBOX ============ */
+.cert-view-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-top:10px;
+  padding:7px 14px;
+  background:linear-gradient(135deg,rgba(79,216,255,.15),rgba(91,140,255,.15));
+  border:1px solid rgba(79,216,255,.3);
+  border-radius:var(--radius-sm);
+  color:var(--cyan);
+  font-size:12px;
+  font-weight:600;
+  font-family:var(--font-mono);
+  cursor:pointer;
+  transition:background .2s,border-color .2s,transform .15s;
+  text-decoration:none;
+}
+.cert-view-btn:hover{
+  background:linear-gradient(135deg,rgba(79,216,255,.25),rgba(91,140,255,.25));
+  border-color:var(--cyan);
+  transform:translateY(-1px);
+}
+
+/* Lightbox overlay */
+.cert-lightbox{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:2000;
+  background:rgba(5,7,12,.92);
+  backdrop-filter:blur(12px);
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+.cert-lightbox.open{ display:flex; }
+
+.cert-lightbox-inner{
+  position:relative;
+  max-width:860px;
+  width:100%;
+  animation:lbZoom .3s var(--ease) both;
+}
+@keyframes lbZoom{
+  from{ opacity:0; transform:scale(.88); }
+  to{ opacity:1; transform:scale(1); }
+}
+
+.cert-lightbox-img{
+  width:100%;
+  border-radius:var(--radius-lg);
+  border:1px solid var(--border-strong);
+  box-shadow:0 24px 80px rgba(0,0,0,.6), var(--shadow-glow);
+  display:block;
+}
+
+.cert-lightbox-close{
+  position:absolute;
+  top:-14px;
+  right:-14px;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:var(--surface-strong);
+  border:1px solid var(--border-strong);
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:background .2s,transform .15s;
+}
+.cert-lightbox-close:hover{ background:rgba(255,255,255,.12); transform:scale(1.1); }
+
+.cert-lightbox-caption{
+  text-align:center;
+  margin-top:14px;
+  font-size:13px;
+  color:var(--text-muted);
+  font-family:var(--font-mono);
+}

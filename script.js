@@ -174,3 +174,31 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* ========== Certificate Lightbox ========== */
+function openCertLightbox(src, caption) {
+  const lb     = document.getElementById('certLightbox');
+  const img    = document.getElementById('certLightboxImg');
+  const cap    = document.getElementById('certLightboxCaption');
+  img.src      = src;
+  cap.textContent = caption;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCertLightbox() {
+  document.getElementById('certLightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const closeBtn = document.getElementById('certLightboxClose');
+  const lightbox = document.getElementById('certLightbox');
+  if (closeBtn) closeBtn.addEventListener('click', closeCertLightbox);
+  if (lightbox) lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeCertLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeCertLightbox();
+  });
+});
