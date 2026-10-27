@@ -319,8 +319,8 @@
         <div class="cert-platform">SystemTron · AICTE &amp; MSME Recognised</div>
         <div class="cert-skill">Data Science · 4 Weeks</div>
         <span class="cert-skill" style="margin-top:-8px; display:block; font-size:12px;">03 Aug – 30 Aug 2026 · CID: ST/INP/12727</span>
-        <button class="cert-view-btn" onclick="openCertLightbox('certificates/systemtron.jpg','Data Science Internship — SystemTron')">
-          🖼 View Certificate
+        <button type="button" class="cert-view-btn" data-cert-jpg="certificates/systemtron.svg" data-cert-fallback="certificates/systemtron.svg" data-cert-caption="Data Science Internship — SystemTron">
+          View certificate
         </button>
       </div>
 
@@ -330,8 +330,8 @@
         <div class="cert-platform">Oasis Infobyte · AICTE OIB-SIP</div>
         <div class="cert-skill">Data Analytics · 1 Month</div>
         <span class="cert-skill" style="margin-top:-8px; display:block; font-size:12px;">05 Jul – 15 Aug 2026 · ISO 9001:2015 Certified</span>
-        <button class="cert-view-btn" onclick="openCertLightbox('certificates/oasis.jpg','Data Analytics Internship — Oasis Infobyte')">
-          🖼 View Certificate
+        <button type="button" class="cert-view-btn" data-cert-jpg="certificates/oasis.svg" data-cert-fallback="certificates/oasis.svg" data-cert-caption="Data Analytics Internship — Oasis Infobyte">
+          View certificate
         </button>
       </div>
 
@@ -468,7 +468,12 @@
     <button class="cert-lightbox-close" id="certLightboxClose" aria-label="Close certificate">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
-    <img class="cert-lightbox-img" id="certLightboxImg" src="" alt="Certificate" />
+    <div class="cert-lightbox-status" id="certLightboxStatus" hidden>Loading certificate…</div>
+    <img class="cert-lightbox-img" id="certLightboxImg" src="" alt="" hidden />
+    <div class="cert-lightbox-error" id="certLightboxError" hidden>
+      <p>Could not load this certificate image.</p>
+      <p class="cert-lightbox-error-hint">Add your scan as <code id="certLightboxExpectedPath"></code> in the project folder.</p>
+    </div>
     <div class="cert-lightbox-caption" id="certLightboxCaption"></div>
   </div>
 </div>

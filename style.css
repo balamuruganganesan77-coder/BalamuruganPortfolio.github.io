@@ -536,4 +536,32 @@ footer{ border-top:1px solid var(--border); padding:40px 0; }
   font-size:13px;
   color:var(--text-muted);
   font-family:var(--font-mono);
+}
+
+.cert-lightbox-status,
+.cert-lightbox-error{
+  text-align:center;
+  padding:48px 24px;
+  border-radius:var(--radius-lg);
+  border:1px solid var(--border-strong);
+  background:var(--surface-strong);
+  font-size:14px;
+  color:var(--text-muted);
+}
+
+.cert-lightbox-error-hint{
+  margin-top:10px;
+  font-size:12px;
+  color:var(--text-dim);
+}
+
+.cert-lightbox-error code{
+  font-family:var(--font-mono);
+  color:var(--cyan);
+  font-size:11px;
+}
+
+.cert-view-btn{
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
 }

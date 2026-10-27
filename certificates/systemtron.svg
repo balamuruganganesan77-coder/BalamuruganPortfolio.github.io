@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="620" viewBox="0 0 860 620">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="860" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#4FD8FF"/>
+      <stop offset="1" stop-color="#5B8CFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="860" height="620" rx="24" fill="url(#bg)"/>
+  <rect x="24" y="24" width="812" height="572" rx="18" fill="none" stroke="url(#accent)" stroke-width="3"/>
+  <rect x="40" y="40" width="780" height="540" rx="12" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <text x="430" y="110" fill="#4FD8FF" font-family="Georgia, serif" font-size="42" font-weight="700" text-anchor="middle">Certificate of Completion</text>
+  <text x="430" y="165" fill="#8B93A8" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">Data Science Internship Program</text>
+  <text x="430" y="250" fill="#EEF1F8" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">This is to certify that</text>
+  <text x="430" y="310" fill="#ffffff" font-family="Georgia, serif" font-size="48" font-weight="700" text-anchor="middle">Bala Murugan G</text>
+  <text x="430" y="375" fill="#8B93A8" font-family="Arial, sans-serif" font-size="18" text-anchor="middle">has successfully completed the internship at</text>
+  <text x="430" y="420" fill="#5B8CFF" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">SystemTron</text>
+  <text x="430" y="470" fill="#8B93A8" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">03 Aug 2026 - 30 Aug 2026 | CID: ST/INP/12727</text>
+  <text x="430" y="510" fill="#8B93A8" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">AICTE and MSME Recognised | 4 Weeks</text>
+  <text x="430" y="575" fill="#5D6478" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Add certificates/systemtron.jpg for your official certificate scan</text>
+</svg>

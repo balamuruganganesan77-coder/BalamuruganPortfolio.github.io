@@ -176,28 +176,76 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ========== Certificate Lightbox ========== */
-function openCertLightbox(src, caption) {
-  const lb     = document.getElementById('certLightbox');
-  const img    = document.getElementById('certLightboxImg');
-  const cap    = document.getElementById('certLightboxCaption');
-  img.src      = src;
-  cap.textContent = caption;
-  lb.classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-
 function closeCertLightbox() {
-  document.getElementById('certLightbox').classList.remove('open');
+  const lb = document.getElementById('certLightbox');
+  if (!lb || !lb.classList.contains('open')) return;
+  lb.classList.remove('open');
   document.body.style.overflow = '';
 }
 
+function openCertLightbox(jpgSrc, fallbackSrc, caption) {
+  const lb = document.getElementById('certLightbox');
+  const img = document.getElementById('certLightboxImg');
+  const cap = document.getElementById('certLightboxCaption');
+  const status = document.getElementById('certLightboxStatus');
+  const error = document.getElementById('certLightboxError');
+  const expectedPath = document.getElementById('certLightboxExpectedPath');
+  if (!lb || !img) return;
+
+  cap.textContent = caption || '';
+  img.alt = caption || 'Certificate';
+  img.hidden = true;
+  error.hidden = true;
+  status.hidden = false;
+  if (expectedPath) expectedPath.textContent = jpgSrc || '';
+
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  const sources = [jpgSrc, fallbackSrc].filter(Boolean);
+
+  function trySource(index) {
+    if (index >= sources.length) {
+      status.hidden = true;
+      img.hidden = true;
+      error.hidden = false;
+      return;
+    }
+
+    img.onload = () => {
+      status.hidden = true;
+      error.hidden = true;
+      img.hidden = false;
+    };
+
+    img.onerror = () => trySource(index + 1);
+    img.src = sources[index];
+  }
+
+  trySource(0);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.cert-view-btn[data-cert-jpg]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openCertLightbox(
+        btn.getAttribute('data-cert-jpg'),
+        btn.getAttribute('data-cert-fallback'),
+        btn.getAttribute('data-cert-caption')
+      );
+    });
+  });
+
   const closeBtn = document.getElementById('certLightboxClose');
   const lightbox = document.getElementById('certLightbox');
   if (closeBtn) closeBtn.addEventListener('click', closeCertLightbox);
-  if (lightbox) lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox) closeCertLightbox();
-  });
+  if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeCertLightbox();
+    });
+  }
+
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeCertLightbox();
   });
